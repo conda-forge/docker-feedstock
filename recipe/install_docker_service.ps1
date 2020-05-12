@@ -23,7 +23,7 @@ try {
 # Create the 'docker' service
 $proc = Start-Process dockerd.cmd -ArgumentList $dockerArgs -NoNewWindow -Wait -PassThru;
 if ($proc.ExitCode -ne 0) {
-    Write-Host "WARNING: Couldn't create the service!"
+    Write-Host "WARNING: Couldn't create the docker service!"
     Write-Host $proc.StandardError
     Exit 0
 }
