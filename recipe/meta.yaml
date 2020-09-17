@@ -1,5 +1,5 @@
 {% set name = "docker" %}
-{% set version = "19.03.11" %}
+{% set version = "19.03.12" %}
 
 package:
   name: {{ name|lower }}
@@ -8,11 +8,11 @@ package:
 source:
   folder: docker
   url: https://dockermsft.blob.core.windows.net/dockercontainer/docker-{{ version.replace('.', '-') }}.zip
-  sha256: a9f268d0949eb242778f9fb7907db7867650eb426882a9eebd72448e13f83c61
+  sha256: 2e13aadc82cc2247cf617b4396e0d7948b333f5d5e4230141bc4dbdd6f2837e0
 
 build:
   number: 0
-  skip: True  # [not win]
+  skip: true  # [not win]
 
 requirements:
   run:
@@ -27,7 +27,7 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE.txt
-  summary: 'Docker Engine - Enterprise enables native Docker containers on Windows Server.'
+  summary: Docker Engine - Enterprise enables native Docker containers on Windows Server.
   doc_url: https://docs.docker.com/ee/docker-ee/windows/docker-ee/
   dev_url: https://dockermsft.blob.core.windows.net/dockercontainer/DockerMsftIndex.json
 
