@@ -5,11 +5,13 @@ Home: https://github.com/moby/moby
 
 Package license: Apache-2.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/docker-feedstock/blob/master/LICENSE.txt)
 
 Summary: Docker Engine - Enterprise enables native Docker containers on Windows Server.
 
+Development: https://dockermsft.blob.core.windows.net/dockercontainer/DockerMsftIndex.json
 
+Documentation: https://docs.docker.com/ee/docker-ee/windows/docker-ee/
 
 Current build status
 ====================
