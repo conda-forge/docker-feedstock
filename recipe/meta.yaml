@@ -1,5 +1,5 @@
 {% set name = "docker" %}
-{% set version = "19.03.13" %}
+{% set version = "19.03.14" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   folder: docker
   url: https://dockermsft.blob.core.windows.net/dockercontainer/docker-{{ version.replace('.', '-') }}.zip
-  sha256: 61dee9bd38198dd2f26319c5c60206a9beee42f4346f382ab72ae68f3cca04b2
+  sha256: 0f4cd341a9d268fab3f5e0b9dfbf58f75a053af64efe82ea9552c055741b926d
 
 build:
   number: 0
